@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Container for the app */
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Search Input and Button */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #cityInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c9ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Weather Information Styles */
+  .weather-info {
+    margin-top: 10px;
+  }
+  
+  .weather-location {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .weather-description, 
+  .weather-temperature {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  
+    #cityInput {
+      width: 60%;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    .weather-location {
+      font-size: 20px;
+    }
+  
+    .weather-description, 
+    .weather-temperature {
+      font-size: 16px;
+    }
+  }
+  
